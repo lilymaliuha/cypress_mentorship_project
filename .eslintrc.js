@@ -4,7 +4,6 @@
  */
 
 module.exports = {
-  extends: 'standard-with-typescript',
   env: {
     browser: true,
     node: true,
