@@ -17,7 +17,8 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 2018,
-    project: './tsconfig.json'
+    project: './tsconfig.json',
+    sourceType: "module"
   },
   ignorePatterns: [
     'app/private/**',
