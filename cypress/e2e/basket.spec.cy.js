@@ -1,15 +1,12 @@
 import BaseToolbarModule from '../pageObjects/modules/base.toolbar.module'
-import LoginPage from '../pageObjects/login.page'
 import ProductsPage from '../pageObjects/products.page'
 import BasketPage from '../pageObjects/basket.page'
 
 describe('Basket', function () {
   beforeEach(function () {
-    const loginPage = new LoginPage()
-
-    cy.visit('/#/login')
+    cy.loginViaApi(Cypress.env('username'), Cypress.env('password'))
+    cy.visit('/#/search')
     cy.closeWelcomeBanner()
-    loginPage.login(Cypress.env('username'), Cypress.env('password'))
     cy.fixture('productData').then(productData => {
       this.productData = productData
     })

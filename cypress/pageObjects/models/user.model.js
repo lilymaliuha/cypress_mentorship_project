@@ -17,40 +17,16 @@ export class UserModel {
     return this.email;
   }
 
-  setPassword(password) {
-    this.password = password;
-
-    return this;
-  }
-
   getPassword() {
     return this.password;
-  }
-
-  setRepeatedPassword(repeatPassword) {
-    this.repeatPassword = repeatPassword;
-
-    return this;
   }
 
   getRepeatedPassword() {
     return this.repeatPassword;
   }
 
-  setSecurityQuestion(securityQuestion) {
-    this.securityQuestion = securityQuestion;
-
-    return this;
-  }
-
   getSecurityQuestion() {
     return this.securityQuestion;
-  }
-
-  setSecurityQuestionAnswer(securityQuestionAnswer) {
-    this.securityQuestionAnswer = securityQuestionAnswer;
-
-    return this;
   }
 
   getSecurityQuestionAnswer() {

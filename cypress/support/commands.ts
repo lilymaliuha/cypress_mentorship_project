@@ -35,6 +35,27 @@
 //     }
 //   }
 // }
+import "cypress-localstorage-commands";
+
 Cypress.Commands.add('closeWelcomeBanner', () => {
   cy.get('[aria-label="Close Welcome Banner"]').click()
+})
+
+Cypress.Commands.add('loginViaApi', (email, password) => {
+  cy.request({
+    method: 'POST',
+    url: '/rest/user/login',
+    headers: {
+      'content-type': 'application/json'
+    },
+    body: {
+      email: email,
+      password: password,
+    },
+  }).then((response) => {
+    cy.setLocalStorage('token', response.body.authentication.token)
+    cy.setLocalStorage('bid', response.body.authentication.bid)
+    cy.setCookie('token', response.body.authentication.token)
+    sessionStorage.setItem('bid', response.body.authentication.bid)
+    })
 })

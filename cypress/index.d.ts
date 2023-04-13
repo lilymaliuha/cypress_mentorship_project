@@ -6,5 +6,6 @@ declare namespace Cypress {
      * cy.createDefaultTodos()
      */
     closeWelcomeBanner(): Chainable<any>
+    loginViaApi(email: string, password: string): Chainable<any>
   }
 }
