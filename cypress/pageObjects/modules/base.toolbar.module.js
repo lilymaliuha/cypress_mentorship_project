@@ -1,6 +1,6 @@
 class BaseToolbarModule {
   elements = {
-    basketButton: () => cy.get('[aria-label="Show the shopping cart"]'),
+    basketButton: () => cy.get('[data-cy="open-basket-button"]'),
     searchIcon: () => cy.get('.mat-search_icon-search'),
     searchInput: () => cy.get('.mat-search_field input'),
   }

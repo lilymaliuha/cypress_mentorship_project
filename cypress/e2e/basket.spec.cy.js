@@ -2,7 +2,7 @@ import BaseToolbarModule from '../pageObjects/modules/base.toolbar.module'
 import ProductsPage from '../pageObjects/products.page'
 import BasketPage from '../pageObjects/basket.page'
 
-describe('Basket', function () {
+describe('Basket tests', function () {
   beforeEach(function () {
     cy.loginViaApi(Cypress.env('username'), Cypress.env('password'))
     cy.visit('/#/search')
