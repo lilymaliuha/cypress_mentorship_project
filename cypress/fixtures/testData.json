@@ -1,0 +1,23 @@
+[
+  {
+    "productName": "Apple Juice",
+    "fileToUpload": "fileToUpload.jpg",
+    "profilePictureSrc": "assets/public/images/uploads/21.jpg"
+  },
+
+  {
+    "country":"Ukraine",
+    "fullName":"User1",
+    "mobileNum":1111111,
+    "zipCode":"1111",
+    "streetAddress":"Street 1",
+    "city":"Lviv",
+    "state":"Ukraine"
+  },
+  {
+    "fullName":"User1",
+    "cardNum":1111111111111111,
+    "expMonth":"10",
+    "expYear":"2095"
+  }
+]

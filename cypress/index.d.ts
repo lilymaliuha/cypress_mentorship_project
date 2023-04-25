@@ -5,7 +5,7 @@ declare namespace Cypress {
      * @example
      * cy.createDefaultTodos()
      */
-    closeWelcomeBanner(): Chainable<any>
-    loginViaApi(email: string, password: string): Chainable<any>
+    goToAnotherDomain(searchText: string): Chainable<any>
+    closeWelcomeBanners(): Chainable<any>
   }
 }

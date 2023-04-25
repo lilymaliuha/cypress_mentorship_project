@@ -1,0 +1,54 @@
+[
+  {
+    "data": [
+      {
+        "ProductId": 1,
+        "id": 1,
+        "quantity": 73,
+        "limitPerUser": 5,
+        "createdAt": "2023-04-24T06:54:32.542Z",
+        "updatedAt": "2023-04-24T10:14:26.858Z"
+      },
+      {
+        "ProductId": 2,
+        "id": 2,
+        "quantity": 92,
+        "limitPerUser": null,
+        "createdAt": "2023-04-24T06:54:32.542Z",
+        "updatedAt": "2023-04-24T06:54:32.542Z"
+      },
+      {
+        "ProductId": 3,
+        "id": 3,
+        "quantity": 49,
+        "limitPerUser": null,
+        "createdAt": "2023-04-24T06:54:32.542Z",
+        "updatedAt": "2023-04-24T06:54:32.542Z"
+      },
+      {
+        "ProductId": 4,
+        "id": 4,
+        "quantity": 47,
+        "limitPerUser": null,
+        "createdAt": "2023-04-24T06:54:32.542Z",
+        "updatedAt": "2023-04-24T06:54:32.542Z"
+      },
+      {
+        "ProductId": 5,
+        "id": 5,
+        "quantity": 33,
+        "limitPerUser": 5,
+        "createdAt": "2023-04-24T06:54:32.542Z",
+        "updatedAt": "2023-04-24T06:54:32.542Z"
+      },
+      {
+        "ProductId": 6,
+        "id": 6,
+        "quantity": 92,
+        "limitPerUser": null,
+        "createdAt": "2023-04-24T06:54:32.542Z",
+        "updatedAt": "2023-04-24T07:09:57.072Z"
+      }
+    ]
+  }
+]
