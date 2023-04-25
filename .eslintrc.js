@@ -4,7 +4,6 @@
  */
 
 module.exports = {
-  extends: 'standard-with-typescript',
   env: {
     browser: true,
     node: true,
@@ -18,7 +17,8 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 2018,
-    project: './tsconfig.json'
+    project: './tsconfig.json',
+    sourceType: "module"
   },
   ignorePatterns: [
     'app/private/**',

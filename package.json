@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/juice-shop/juice-shop.git"
+    "url": "git+https://github.com/juice-shop/juice-shop.git"
   },
   "license": "MIT",
   "author": "Björn Kimminich <bjoern.kimminich@owasp.org> (https://kimminich.de)",
@@ -229,7 +229,8 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cross-spawn": "^7.0.3",
-    "cypress": "^9.7.0",
+    "cypress": "^12.9.0",
+    "cypress-localstorage-commands": "^2.2.3",
     "eslint": "^7.21.0",
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-import": "^2.22.1",
@@ -276,5 +277,9 @@
       "angular",
       "inject"
     ]
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "lib": "lib"
   }
 }
