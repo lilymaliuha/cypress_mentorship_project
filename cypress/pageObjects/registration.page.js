@@ -10,6 +10,10 @@ class RegistrationPage {
     registrationApprovalMessage: () => cy.get('span').contains('Registration completed successfully.')
   }
 
+  openRegistrationPage() {
+    cy.visit('/#/register')
+  }
+
   enterUserRegistrationData(userToRegister) {
     this.elements.emailInput().type(userToRegister.getEmail())
     this.elements.passwordInput().type(userToRegister.getPassword())

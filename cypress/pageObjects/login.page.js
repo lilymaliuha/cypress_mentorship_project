@@ -6,6 +6,10 @@ class LoginPage {
     loginErrorMessage: () => cy.get('.error').contains('Invalid email or password.'),
   }
 
+  openLoginPage() {
+    cy.visit('/#/login')
+  }
+
   login (username, password) {
     this.elements.loginInputField().type(username)
     this.elements.passwordInputField().type(password)

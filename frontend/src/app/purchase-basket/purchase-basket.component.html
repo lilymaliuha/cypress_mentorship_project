@@ -26,10 +26,10 @@
   <ng-container matColumnDef="quantity">
     <mat-header-cell *matHeaderCellDef style="display: none;"></mat-header-cell>
     <mat-cell *matCellDef="let element" fxFlex="16%" fxFlex.lt-md="35%" class="content-align">
-      <button mat-icon-button (click)="dec(element.BasketItem.id)" *ngIf="allowEdit"><i class="fas fa-minus-square"></i>
+      <button mat-icon-button (click)="dec(element.BasketItem.id)" *ngIf="allowEdit"><i class="fas fa-minus-square" data-cy="minus-button"></i>
       </button>
-      <span style="font-size: initial;"> {{element.BasketItem.quantity}}</span>
-      <button mat-icon-button (click)="inc(element.BasketItem.id)" *ngIf="allowEdit"><i class="fas fa-plus-square"></i>
+      <span style="font-size: initial;" data-cy="basket-item-quantity"> {{element.BasketItem.quantity}}</span>
+      <button mat-icon-button (click)="inc(element.BasketItem.id)" *ngIf="allowEdit"><i class="fas fa-plus-square" data-cy="plus-button"></i>
       </button>
     </mat-cell>
     <mat-footer-cell *matFooterCellDef fxFlex="16%" fxFlex.lt-md="35%" class="header-align">TOTAL</mat-footer-cell>

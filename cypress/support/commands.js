@@ -35,27 +35,24 @@
 //     }
 //   }
 // }
-import "cypress-localstorage-commands";
+import 'cypress-localstorage-commands'
+import 'cypress-file-upload'
 
-Cypress.Commands.add('closeWelcomeBanner', () => {
-  cy.get('[aria-label="Close Welcome Banner"]').click()
-})
+Cypress.Commands.add('goToAnotherDomain', (searchText) => {
+    const args = { searchText }
 
-Cypress.Commands.add('loginViaApi', (email, password) => {
-  cy.request({
-    method: 'POST',
-    url: '/rest/user/login',
-    headers: {
-      'content-type': 'application/json'
-    },
-    body: {
-      email: email,
-      password: password,
-    },
-  }).then((response) => {
-    cy.setLocalStorage('token', response.body.authentication.token)
-    cy.setLocalStorage('bid', response.body.authentication.bid)
-    cy.setCookie('token', response.body.authentication.token)
-    sessionStorage.setItem('bid', response.body.authentication.bid)
+    cy.origin('https://docs.cypress.io/', { args }, ({ searchText }) => {
+      cy.visit('/guides/getting-started/installing-cypress')
+      cy.get('.osano-cm-dialog__close').click()
+      cy.get('.DocSearch-Button').click()
+      cy.get('.DocSearch-Input').type(searchText)
+      cy.get('[id="docsearch-list"]').should('be.visible')
     })
 })
+
+Cypress.Commands.add('closeWelcomeBanners', () => {
+  cy.setCookie('language', 'en')
+  cy.setCookie('welcomebanner_status', 'dismiss')
+  cy.setCookie('cookieconsent_status', 'dismiss')
+})
+
