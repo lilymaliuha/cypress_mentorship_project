@@ -51,7 +51,7 @@
     "build:frontend": "cd frontend && node ./node_modules/@angular/cli/bin/ng build --aot --configuration production --output-hashing=none --vendor-chunk=true --source-map=false",
     "build:server": "tsc",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --spec 'cypress/e2e/login.spec.cy.js' --browser chrome",
+    "cypress:run": "cypress run --spec 'cypress/e2e/*.spec.cy.js' --browser chrome",
     "cy:run": "cypress run",
     "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress/e2e",
     "frisby": "nyc --report-dir=./build/reports/coverage/api-tests jest --silent --runInBand --forceExit",
