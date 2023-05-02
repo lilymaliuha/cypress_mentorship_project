@@ -5,7 +5,7 @@ class OrderCompletionModule {
   }
 
   isProductPresentInSummary(productName) {
-    return this.elements.productName().contains(productName).should('be.visible')
+    return this.elements.productName().contains(productName).should('be.visible');
   }
 }
 

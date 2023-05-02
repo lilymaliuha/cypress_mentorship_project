@@ -7,14 +7,14 @@ class AddressPage {
   }
 
   selectAddressByIndexAndContinue (addressIndex) {
-    this.elements.addressRadioButton().eq(addressIndex).click()
-    this.elements.continueButton().click()
+    this.elements.addressRadioButton().eq(addressIndex).click();
+    this.elements.continueButton().click();
   }
 
   selectDeliveryTypeByIndexAndContinue(deliveryIndex) {
-    this.elements.deliveryRow().eq(deliveryIndex).find(this.elements.deliveryTypeRadioButton()).click()
-    this.elements.continueButton().click()
+    this.elements.deliveryRow().eq(deliveryIndex).find(this.elements.deliveryTypeRadioButton()).click();
+    this.elements.continueButton().click();
   }
 }
 
-export default AddressPage
+export default AddressPage;

@@ -7,14 +7,14 @@ class LoginPage {
   }
 
   openLoginPage() {
-    cy.visit('/#/login')
+    cy.visit('/#/login');
   }
 
   login (username, password) {
-    this.elements.loginInputField().type(username)
-    this.elements.passwordInputField().type(password)
-    this.elements.loginButton().click()
+    this.elements.loginInputField().type(username);
+    this.elements.passwordInputField().type(password);
+    this.elements.loginButton().click();
   }
 }
 
-export default LoginPage
+export default LoginPage;

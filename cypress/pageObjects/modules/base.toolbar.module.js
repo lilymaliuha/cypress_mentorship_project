@@ -6,12 +6,12 @@ class BaseToolbarModule {
   }
 
   searchProduct(productName) {
-    this.elements.searchIcon().click()
-    this.elements.searchInput().type(productName).type('{enter}')
+    this.elements.searchIcon().click();
+    this.elements.searchInput().type(productName).type('{enter}');
   }
 
   openBasketPage() {
-    this.elements.basketButton().click()
+    this.elements.basketButton().click();
   }
 }
 

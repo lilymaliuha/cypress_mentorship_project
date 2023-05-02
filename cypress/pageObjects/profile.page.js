@@ -7,18 +7,18 @@ class ProfilePage {
   }
 
   openProfilePage() {
-    cy.visit('/profile')
+    cy.visit('/profile');
   }
 
   uploadProfilePicture (pictureName) {
-    this.elements.uploadPictureInput().attachFile(pictureName)
-    this.elements.uploadPictureButton().click()
+    this.elements.uploadPictureInput().attachFile(pictureName);
+    this.elements.uploadPictureButton().click();
   }
 
   getProfileEmail() {
-    return this.elements.profileEmail().invoke('val')
+    return this.elements.profileEmail().invoke('val');
 
   }
 }
 
-export default ProfilePage
+export default ProfilePage;

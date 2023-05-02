@@ -11,20 +11,20 @@ class RegistrationPage {
   }
 
   openRegistrationPage() {
-    cy.visit('/#/register')
+    cy.visit('/#/register');
   }
 
   enterUserRegistrationData(userToRegister) {
-    this.elements.emailInput().type(userToRegister.getEmail())
-    this.elements.passwordInput().type(userToRegister.getPassword())
-    this.elements.repeatPasswordInput().type(userToRegister.getRepeatedPassword())
-    this.elements.securityQuestionDropDown().click()
-    this.elements.securityQuestionOption().contains(userToRegister.getSecurityQuestion()).click()
-    this.elements.securityQuestionAnswerInput().type(userToRegister.getSecurityQuestionAnswer())
+    this.elements.emailInput().type(userToRegister.getEmail());
+    this.elements.passwordInput().type(userToRegister.getPassword());
+    this.elements.repeatPasswordInput().type(userToRegister.getRepeatedPassword());
+    this.elements.securityQuestionDropDown().click();
+    this.elements.securityQuestionOption().contains(userToRegister.getSecurityQuestion()).click();
+    this.elements.securityQuestionAnswerInput().type(userToRegister.getSecurityQuestionAnswer());
   }
 
   submitRegistration() {
-    this.elements.registerButton().click()
+    this.elements.registerButton().click();
   }
 }
 

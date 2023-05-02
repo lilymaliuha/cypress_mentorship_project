@@ -6,15 +6,15 @@ class ProductsPage {
   }
 
   openProductsPage() {
-    cy.visit('/#/')
+    cy.visit('/#/');
   }
 
   addProductToBasketByIndex (productIndex) {
-    this.elements.addToBasketButton().eq(productIndex).click()
+    this.elements.addToBasketButton().eq(productIndex).click();
 
-    this.elements.addToBasketConfirmationLabel().should('be.visible')
-    this.elements.addToBasketConfirmationLabel().should('not.exist')
+    this.elements.addToBasketConfirmationLabel().should('be.visible');
+    this.elements.addToBasketConfirmationLabel().should('not.exist');
   }
 }
 
-export default ProductsPage
+export default ProductsPage;
