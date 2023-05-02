@@ -4,7 +4,7 @@ class OrderSummaryModule {
   }
 
   clickOnCheckoutButton() {
-    this.elements.checkoutButton().click()
+    this.elements.checkoutButton().click();
   }
 }
 

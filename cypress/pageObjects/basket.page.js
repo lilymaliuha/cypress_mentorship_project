@@ -8,28 +8,28 @@ class BasketPage {
   }
 
   openBasketPage() {
-    cy.visit('/#/basket')
+    cy.visit('/#/basket');
   }
 
   deleteProductFromBasketByIndex (productIndex) {
-    this.elements.productItemRow().eq(productIndex).find(this.elements.deleteButton()).click()
+    this.elements.productItemRow().eq(productIndex).find(this.elements.deleteButton()).click();
   }
 
   deleteProductFromBasketByName(productName) {
-    this.elements.productItemRow().contains(productName).find(this.elements.deleteButton()).click()
+    this.elements.productItemRow().contains(productName).find(this.elements.deleteButton()).click();
   }
 
   increaseProductAmountInBasket(productIndex) {
-    this.elements.productItemRow().eq(productIndex).find(this.elements.plusButton()).click()
+    this.elements.productItemRow().eq(productIndex).find(this.elements.plusButton()).click();
   }
 
   getProductQuantity(productIndex) {
-    return this.elements.productItemRow().eq(productIndex).find(this.elements.basketItemQuantityLabel())
+    return this.elements.productItemRow().eq(productIndex).find(this.elements.basketItemQuantityLabel());
   }
 
   clickOnCheckoutButton() {
-    this.elements.checkoutButton().click()
+    this.elements.checkoutButton().click();
   }
 }
 
-export default BasketPage
+export default BasketPage;

@@ -5,9 +5,9 @@ class PaymentPage {
   }
 
   selectPaymentCardByIndexAndContinue (cardIndex) {
-    this.elements.paymentCardRadioButton().eq(cardIndex).click()
-    this.elements.continueButton().click()
+    this.elements.paymentCardRadioButton().eq(cardIndex).click();
+    this.elements.continueButton().click();
   }
 }
 
-export default PaymentPage
+export default PaymentPage;
